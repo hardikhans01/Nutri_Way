@@ -1,0 +1,28 @@
+
+  p{
+    font-family: 'Open Sans', sans-serif; 
+  }
+  .navlink {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .nav-item{
+    padding: 0.7rem;
+    font-size: 1.2em;
+    
+  }
+
+  .navbar-brand{
+    font-size: 1.8em;
+    margin-top: 0.2%;
+  }
+
+  .btn-down{
+    position: absolute;
+    bottom:18px;
+    width:auto  !important;
+  }
+
+  .blog{
+    height:41vh
+  }
