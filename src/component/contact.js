@@ -9,16 +9,16 @@ export default function contact() {
       {/* <!-- NavBar --> */}
       <nav
         className="navbar navbar-expand-lg navbar-light"
-        style={{backgroundColor: '#ceecf7', padding: '3rem 10% 0'}}
+        style={{backgroundColor: '#ceecf7', padding: '2rem 10% 0',fontFamily: 'Poppins, sans-serif'}}
       >
         <Link className="navbar-brand" to="/">
-          <img
+          {/* <img
             src="./public/4.png"
             width="30"
             height="30"
             className="d-inline-block align-top"
             alt=""
-          />
+          /> */}
           Nutri Way
         </Link>
         <button
@@ -49,7 +49,7 @@ export default function contact() {
             </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/contact_us.html"
-                >Contact Us <span className="sr-only"></span></Link
+               style={{backgroundColor: 'rgb(22, 90, 216)', borderRadius: '5%' }} >Contact Us <span className="sr-only"></span></Link
               >
             </li>
           </ul>
@@ -74,7 +74,7 @@ export default function contact() {
         <textarea className="m" placeholder="Message....."></textarea>
         </div>
         <div className="sen">
-        <a href="mailto:hardikhans01@gmail.com"><button className="btn">SEND MESSAGE</button></a>
+        <a href="mailto:hardikhans01@gmail.com"><button className="btn btn-primary btn-md" style={{width: 'auto'}}>SEND MESSAGE</button></a>
         </div>
         
         </div>

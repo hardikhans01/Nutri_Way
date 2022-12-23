@@ -1,8 +1,9 @@
 import React from 'react'
-import img1 from './4.png'
+// import img1 from './1.svg'
 import img2 from './3.svg'
 import img3 from './nutri.png'
 import { Link } from 'react-router-dom'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 export default function page() {
   return (
    <>
@@ -11,7 +12,7 @@ export default function page() {
   </div> */}
   <div id="content">
     {/* <!-- NavBar --> */}
-    <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#ceecf7', padding: '2rem 10% 0'}}>
+    <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#ceecf7', padding: '2rem 10% 0',fontFamily: 'Poppins, sans-serif'}}>
       <Link className="navbar-brand" to="/">
         {/* <img src={img1} style={{width:'3%', height:'3%'}} className="d-inline-block align-top" alt=""/> */}
         Nutri Way
@@ -23,17 +24,17 @@ export default function page() {
       <div className="collapse navbar-collapse me-1" id="navbarNav" style={{justifyContent: 'end'}}>
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <Link className="nav-link" to="/">Home <span className="sr-only"></span></Link>
+            <Link className="nav-link" to="/" style={{backgroundColor: 'rgb(22, 90, 216)', borderRadius: '5%' }}>Home <span className="sr-only" ></span></Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="./dietary_chart.html">Dietary Chart</Link>
+            <Link className="nav-link" to="/dietary_chart.html">Dietary Chart</Link>
           </li>
          
           <li className="nav-item">
-            <Link className="nav-link" to="./notify.html">Notify Me</Link>
+            <Link className="nav-link" to="/notify.html">Notify Me</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="./contact_us.html">Contact Us</Link>
+            <Link className="nav-link" to="/contact_us.html">Contact Us</Link>
           </li>
         </ul>
       </div>
@@ -44,8 +45,7 @@ export default function page() {
       <div className="row">
         <div className="col-lg-6 col-md-12 col-sm-12"
           style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-          <h1 style={{fontFamily: 'Poppins, sans-serif', fontWeight: 'bolder', fontSize: '2.3em'}}>Live healthy with Nutri
-            Way</h1>
+          <h1 style={{fontFamily: 'Poppins, sans-serif', fontWeight: 'bolder', fontSize: '2.3em'}}>Live healthy with Nutri Way</h1>
           <div>
             <div className="container-fluid">
               <div className="row" style={{paddingTop: '6%'}}>
@@ -82,7 +82,7 @@ export default function page() {
           </div>
         </div>
         <div className="col-lg-6 col-md-12 col-sm-12">
-          {/* <!-- <img src="./public/1.svg" alt="" style="width: 70%"> --> */}
+          {/* <!-- <img src={img1} alt="" style="width: 70%"> --> */}
           <img src={img3} alt="" style={{width:'100%', paddingTop: '0.1rem', marginBottom: '5rem',borderRadius: '5%'}}/>
         </div>
       </div>
@@ -91,7 +91,7 @@ export default function page() {
           <div className="col-lg-6 col-md-12 col-sm-12"></div>
           <div className="col-lg-6 col-md-12 col-sm-12">
 
-
+                    {/* table in starting of home page */}
             <div className="card-group">
               <div className="card">
                 <div className="card-body">
@@ -107,14 +107,14 @@ export default function page() {
               </div>
               <div className="card">
                 <div className="card-body">
-                  <h5 className="card-title">India's Global Hunger Rank</h5><br/>
-                  <p className="card-text" style={{marginTop: '-1.4rem'}}>107</p>
+                  <h5 className="card-title">India's diet quality Rank</h5><br/>
+                  <p className="card-text" style={{marginTop: '-1.2rem'}}>77</p>
                 </div>
               </div>
               <div className="card">
                 <div className="card-body">
-                  <h5 className="card-title">India's Nutrition Rank</h5><br/>
-                  <p className="card-text" style={{marginTop: '0.2rem'}}>88</p>
+                  <h5 className="card-title">India's Health index Rank</h5><br/>
+                  <p className="card-text" style={{marginTop: '-1.2rem'}}>101</p>
                 </div>
               </div>
             </div>
@@ -125,18 +125,17 @@ export default function page() {
 
 
     {/* <!-- Second Div --> */}
-    <div className="container-fluid" style={{padding: '5%', paddingBottom: '8%'}}>
+    <div className="container-fluid" style={{padding: '5%', paddingBottom: '8%',backgroundColor: 'white'}}>
       <h1 style={{textAlign: 'center',padding: '3% 0 2%'}}>Blogs</h1><br/>
       <div>
         <div className="row">
           <div className="col-lg-4 col-md-12 col-sm-12" style={{paddingBottom:'3%'}}>
             <div className="card shadow p-3 mb-5 bg-white rounded blog">
               <div className="card-body">
-                {/* <!-- <i className="fas fa-hospital" size:9x></i> --> */}
-                <h5 className="card-title">7 Best Exercises to lose fat</h5>
-                <p className="card-text">These are some helpful exercise that everyone can do at home and they are really
-                  helpful in losing weight.</p>
-                <a  href="https://www.nutritionbylovneet.com/blog/7-best-fat-loss-exercises-at-home"
+                 {/* <i className="fas fa-hospital" size:9x></i>  */}
+                <h5 className="card-title">8 Best Exercises to lose fat</h5>
+                <p className="card-text">These are some helpful exercise that everyone can do at home and they are really helpful in losing weight.</p>
+                <a  href="https://www.healthline.com/nutrition/best-exercise-for-weight-loss#cycling"
                   className="btn hospital-btn btn-down" style={{backgroundColor: '#07A6C2', color: 'white'}}>Click here</a>
               </div>
             </div>
@@ -147,7 +146,7 @@ export default function page() {
                 <h5 className="card-title">Weight loss Vs. Fat loss</h5>
                 <p className="card-text">People have misconception about weight loss. Weight loss is much different from fat
                   loss.</p><br/>
-                <a href="https://www.nutritionbylovneet.com/blog/weight-loss-vs-fat-loss-the-difference-explained"
+                <a href="https://www.healthline.com/nutrition/weight-loss-vs-fat-loss"
                   className="btn btn-down" style={{backgroundColor: '#07A6C2', color:'white', marginTop: '3.5rem'}}>Click here</a>
               </div>
             </div>
@@ -156,8 +155,7 @@ export default function page() {
             <div className="card shadow p-3 mb-5 bg-white rounded">
               <div className="card-body" style={{height: '15rem'}}>
                 <h5 className="card-title">What should be done for a healthy living.</h5>
-                <p className="card-text">There are some tips that have been verified by various researcher and nutritionist
-                  that are helpful in living a healthy life.</p><br/>
+                <p className="card-text">There are some tips that have been verified by various researcher and nutritionist that are helpful in living a healthy life.</p><br/>
                 <a className="btn btn-down" href='/' style={{backgroundColor: '#07A6C2', color: 'white', marginTop: '0.8rem'}}>Click here</a>
               </div>
             </div>
@@ -176,9 +174,10 @@ export default function page() {
             <h1 style={{textAlign:'center', paddingTop: '0.5rem'}}>Silver</h1>
             <br/><br/>
             <ul style={{fontSize: '1.5rem'}}>
-              <li style={{marginBottom:'7%'}}>Weekly Appointment</li>
+              <li style={{marginBottom:'7%'}}>Weekly Nutrition tips</li>
               {/* <!-- <br/> --> */}
-              <li>Regular Guidance</li>
+              <li style={{marginBottom:'7%'}}>Regular Guidance</li>
+              <li style={{marginBottom:'7%'}}>Get latest Alerts</li>
               {/* <!-- <li></li> --> */}
             </ul>
           </div>
@@ -189,11 +188,12 @@ export default function page() {
             <h1 style={{textAlign: 'center', paddingTop: '0.5rem'}}>Gold</h1>
             <br/><br/>
             <ul style={{fontSize: '1.5rem'}}>
-              <li style={{marginBottom:'7%'}}>Weekly Appointment</li>
+              <li style={{marginBottom:'7%'}}>Weekly Nutrition tips</li>
               {/* <!-- <br/> --> */}
               <li style={{marginBottom:'7%'}}>Regular Guidance</li>
               {/* <!-- <br/> -->/ */}
-              <li>Get latest Alerts</li>
+              <li style={{marginBottom:'7%'}}>Get latest Alerts</li>
+              <li>Personalized Training</li>
             </ul>
           </div>
         </div>
@@ -202,13 +202,14 @@ export default function page() {
             style={{height: '25rem', width: '18rem', background:'linear-gradient(135deg,rgb(70, 188, 243),rgb(145, 181, 236))' ,marginLeft:'3rem', marginTop: '2rem', borderRadius: '10%', paddingRight: '0rem'}}>
             <h1 style={{textAlign: 'center', paddingTop: '0.5rem'}}>Platinum</h1>
             <ul style={{fontSize: '1.5rem'}}>
-              <li style={{marginTop: '8%', marginBottom: '7%'}}>Weekly Appointment</li>
+              <li style={{marginTop: '8%', marginBottom: '7%'}}>Nutrition tips :- 2x a week</li>
               {/* <!-- <br/> --> */}
               <li style={{marginBottom:'7%'}}>Regular Guidance</li>
               {/* <!-- <br/> --> */}
               <li style={{marginBottom:'7%'}}>Get latest Alerts</li>
               {/* <!-- <br/> --> */}
-              <li>Personalized Training</li>
+              <li style={{marginBottom:'7%'}}>Personalized Training</li>
+              <li>Chat feature available within website</li>
             </ul>
           </div>
         </div>
@@ -221,9 +222,7 @@ export default function page() {
           <div className="col-lg-6 col-md-12 col-sm-12"
             style={{display: 'flex',flexDirection: 'column', justifyContent: 'center'}}>
             <div>
-              <p>You didn't find any slot for Appointment?<br/>No problem we cover this for you! <br/>Just give your email
-                address and we'll notify you a week before so that you don't have to check the slots again! <br/>Find
-                this feature handy and useful?</p>
+              <p>You didn't find any slot for Appointment?<br/>No problem we cover this for you! <br/>Just give your email address and we'll notify you a week before so that you don't have to check the slots again! <br/>Find this feature handy and useful?</p>
             </div>
             <div>
               <Link to="./notify.html" className="btn" style={{backgroundColor: '#07A6C2', color:'white'}}>Subscribe!</Link>

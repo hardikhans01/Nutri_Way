@@ -6,15 +6,8 @@ export default function dietary() {
     <div id="content">
       {/* <!-- NavBar --> */}
       <nav
-        className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#ceecf7',padding: '3rem 10% 0',fontFamily: 'Poppins, sans-serif',  }}>
+        className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#ceecf7',padding: '2rem 10% 0',fontFamily: 'Poppins, sans-serif' }}>
         <Link className="navbar-brand" to="/">
-          <img
-            src="./public/4.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt=""
-          />
           Nutri Way
         </Link>
         <button
@@ -39,11 +32,11 @@ export default function dietary() {
             </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/dietary_chart.html"
-                >Dietary Chart<span className="sr-only"></span></Link
+               style={{backgroundColor: 'rgb(22, 90, 216)', borderRadius: '5%' }} >Dietary Chart</Link
               >
             </li>
-            <li className="nav-item">
-            </li>
+            {/* <li className="nav-item">
+            </li> */}
             <li className="nav-item">
               <Link className="nav-link" to="/notify.html">Notify Me</Link>
             </li>
@@ -55,6 +48,12 @@ export default function dietary() {
       </nav>
 
      <div className=" row img_1" style={{background: "#ceecf7" }}>
+      <div className="col-lg-6">
+        <img style={{borderRadius: '5%', display:'inline', marginTop: '2rem', marginLeft: '2rem', width: '90%', height: '90%'}} src="https://i.ndtvimg.com/i/2015-09/balanced-diet_625x578_71441628210.jpg" alt="" />
+      </div>
+      <div className="col-lg-6">
+        <img style={{borderRadius: '5%', display:'inline', float:'right',marginTop: '2rem', marginLeft: '2rem',  width: '90%', height: '90%'}} src="https://i.pinimg.com/originals/82/08/8c/82088c9f6738714d658abd5ab42bc4fc.jpg" alt="" />
+      </div>
       <div className="col-lg-6">
         <img style={{borderRadius: '5%', display:'inline', marginTop: '2rem', marginLeft: '2rem', width: '90%', height: '90%'}} src="https://possible.in/wp-content/uploads/2020/11/Women-Diet-Chart.jpg" alt="" />
       </div>

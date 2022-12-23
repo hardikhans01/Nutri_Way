@@ -3,23 +3,12 @@ import { Link } from 'react-router-dom'
 export default function notify() {
   return (
  <>
-    <div id="loader">
-      <img src="./public/plaster-new.gif" alt="" />
-    </div>
-
     <div id="content">
       {/* <!-- NavBar --> */} 
       <nav
         className="navbar navbar-expand-lg navbar-light"
-        style={{backgroundColor: '#ceecf7', padding: '3rem 10% 0'}}>
+        style={{backgroundColor: '#ceecf7', padding: '2rem 10% 0',fontFamily: 'Poppins, sans-serif'}}>
         <Link className="navbar-brand" to="/">
-          <img
-            src="./public/4.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt=""
-          />
           Nutri Way
         </Link>
         <button
@@ -47,9 +36,9 @@ export default function notify() {
             <li className="nav-item">
               <Link className="nav-link" to="/dietary_chart.html">Dietary Chart</Link>
             </li>
-            <li className="nav-item active">
+            <li className="nav-item active" >
               <Link className="nav-link" to="/notify.html"
-                >Notify Me<span className="sr-only"></span></Link
+                style={{backgroundColor: 'rgb(22, 90, 216)', borderRadius: '5%' }}>Notify Me<span className="sr-only"></span></Link
               >
             </li>
             <li className="nav-item">
@@ -129,7 +118,7 @@ export default function notify() {
                 paddingTop: '2vh',
               }}
             >
-              <button className="btn btn-primary btn-md" style={{marginRight: '1vh'}}>
+              <button className="btn btn-primary btn-md" style={{marginRight: '1vh' , width: 'auto'}}>
                 Notify Me!
               </button>
               <div
