@@ -8,13 +8,6 @@ export default function dietary() {
       <nav
         className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#ceecf7',padding: '3rem 10% 0',fontFamily: 'Poppins, sans-serif',  }}>
         <Link className="navbar-brand" to="/">
-          <img
-            src="./public/4.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt=""
-          />
           Nutri Way
         </Link>
         <button
